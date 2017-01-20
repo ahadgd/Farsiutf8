@@ -10,8 +10,8 @@ char Farsiutf8::utf8ascii(char c1,char c2)
 {       
         byte r;
         char c;
-        Serial.print((int)c1,HEX);
-        Serial.println((int)c2);
+        //Serial.print((int)c1,HEX);
+        //Serial.println((int)c2);
          if(c1==217 ||c1==216||c1==219)r=Getchar2(c2);
         else if(c1==218)r=Getchar3(c2);
         return r;
